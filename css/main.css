@@ -1,0 +1,119 @@
+a:hover {
+  text-decoration: none;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
+
+#footer .quick-links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.ellipsis {
+  white-space: nowrap;
+  /* 1 */
+  text-overflow: ellipsis;
+  /* 2 */
+  overflow: hidden; }
+
+#mainNav a.active:after {
+  content: '';
+  position: absolute;
+  z-index: 222;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #CA2E17;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease; }
+
+#mainNav .nav-link {
+  position: relative; }
+  #mainNav .nav-link:after {
+    content: '';
+    position: absolute;
+    z-index: 222;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #CA2E17; }
+  #mainNav .nav-link:hover:after {
+    width: 100%;
+    -webkit-transition: width 0.3s ease-in;
+    transition: width 0.3s ease-in; }
+
+#wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.scrolled {
+  background-color: rgba(63, 102, 101, 0.85) !important;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease; }
+
+.text-color {
+  color: #fff !important; }
+
+.img-width {
+  display: none; }
+
+#main #wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.banner {
+  max-width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .banner:before {
+    content: '';
+    background: #000;
+    position: absolute;
+    z-index: 555;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7; }
+  .banner .container {
+    z-index: 999;
+    max-width: 80%;
+    margin-right: auto; }
+
+.underline, .underline-white {
+  position: relative; }
+  .underline:after, .underline-white:after {
+    content: '';
+    background-color: #F2770F;
+    height: 5px;
+    width: 8%;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
+.underline-white:after {
+  background-color: #fff; }
+
+#carouselExampleIndicators .carousel-indicators {
+  z-index: 999; }
+
+body {
+  min-width: 320px; }
+/*# sourceMappingURL=main.css.map */
