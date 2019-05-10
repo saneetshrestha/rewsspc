@@ -163,6 +163,11 @@ h5, .h5 {
     h5, .h5 {
       font-size: 20px; } }
 
+.gallery {
+  margin: 0 auto; }
+  .gallery a:hover {
+    opacity: 0.8; }
+
 p {
   font-size: 12px; }
   @media (min-width: 480px) {

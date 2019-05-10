@@ -43,7 +43,7 @@ distance:'0'
 
 $(window).scroll(function(){$('nav').toggleClass('scrolled', $(this).scrollTop() > 500);});
 $(window).scroll(function(){$('nav .nav-link').toggleClass('text-color', $(this).scrollTop() > 500);});
-
+$(window).scroll(function(){$('nav .logo-text').toggleClass('text-color', $(this).scrollTop() > 500);});
 $(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
 
@@ -51,3 +51,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       scrollTop: $($.attr(this, 'href')).offset().top
   }, 500);
 });
+
+$(document).ready(function(){
+
+  $('[data-fancybox="images"]').fancybox();
+})
