@@ -44,11 +44,10 @@ distance:'0'
 $(window).scroll(function(){$('nav').toggleClass('scrolled', $(this).scrollTop() > 500);});
 $(window).scroll(function(){$('nav .nav-link').toggleClass('text-color', $(this).scrollTop() > 500);});
 
-// $(window).scroll(function(){
-//   if($(this).scrollTop()>5){
-//     $('#logoImage').addClass('img-width');
-//   }
-// }
-//   , $(this).scrollTop() > 500);});
-// $(window).scroll(function(){$('#logoImage').removeClass('img-width', $(this).scrollTop() < 500);});
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
 
+  $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top
+  }, 500);
+});
