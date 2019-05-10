@@ -83,16 +83,6 @@ a:hover {
   background-size: cover;
   background-position: center;
   position: relative; }
-  .banner:before {
-    content: '';
-    background: #000;
-    position: absolute;
-    z-index: 555;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.7; }
   .banner .container {
     z-index: 999;
     max-width: 80%;
@@ -100,6 +90,9 @@ a:hover {
 
 .main-heading {
   font-weight: 800; }
+
+.bg-overlay {
+  background-color: rgba(0, 0, 0, 0.2); }
 
 .banner-image {
   max-width: 100%;
